@@ -564,7 +564,9 @@
       console.log("resetListToAllItemsAndOpen");
     }
 
-    filteredListItems = listItems;
+    if (text === "") {
+      filteredListItems = listItems;
+    }
 
     open();
 
